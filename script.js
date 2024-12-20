@@ -236,11 +236,5 @@
 
 	inputTextSearch.addEventListener("input", songSearch);
 
-document.addEventListener('touchmove', function(event) {
-    if (event.target.closest('.scrollable')) {
-        event.stopPropagation(); // Onemogućava skrolovanje na celokupnoj stranici
-    }
-});
-
 
 //});
