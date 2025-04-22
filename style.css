@@ -169,12 +169,10 @@ body{
 
 .menu-item:nth-child(2){
 	border-top: 5px solid black;
-	border-bottom: 1px solid black; /* mozda privremeno */
 }
 
 .menu-item:last-child{
 	border-bottom: 1px solid black;
-	margin-top: auto;  /* Mozda privremeno */
 }
 
 
