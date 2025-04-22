@@ -2,7 +2,6 @@ let listElements = [
 
 {
 	
-	songId: "song-Id-0",
 	songTitle:"U tebe sam zaljubljen",
 	songAuthor: "Rođa Raičević",
 	songKey: "E",
@@ -33,7 +32,6 @@ bile ptice selice`,
 
 {
 	
-	songId: "song-Id-1",
 	songTitle:"Pile",
 	songAuthor: "Ceca",
 	songKey: "Gismol",
@@ -64,7 +62,6 @@ ovo je put za neke snaznije`,
 
 {
 	
-	songId: "song-Id-2",
 	songTitle:"Libero",
 	songAuthor: "Željko Joksimović",
 	songKey: "Cmol",
@@ -110,7 +107,6 @@ Ref.`,
 
 {
 	
-	songId: "song-Id-3",
 	songTitle:"Uđi slobodno",
 	songAuthor: "Lepa Brena",
 	songKey: "Amol",
@@ -159,7 +155,6 @@ Ref.`,
 
 {
 	
-	songId: "song-Id-4",
 	songTitle:"Grlica",
 	songAuthor: "Željko Samardžić",
 	songKey: "Amol",
@@ -195,7 +190,6 @@ tvojih dvadeset i pet`,
 
 {
 	
-	songId: "song-Id-5",
 	songTitle:"Pokora",
 	songAuthor: "Boris Režak",
 	songKey: "D",
@@ -232,6 +226,305 @@ i vrijedi najvise
 Ref.`,
 
 },
+
+{
+	
+	songTitle:"Nikotin",
+	songAuthor: "Nataša Bekvalac",
+	songKey: "Dmol",
+	songColor: "#0000ff25",
+	songText:`Sa devojkom si bio
+juce sam videla te slucajno
+isti k'o i uvek
+jednu za drugom palis uporno
+
+O, zasto nisam ti ja
+cigareta bez filtera
+samo da setam
+od prstiju tvojih do usana
+
+
+Ref.
+Kao nikotin
+ti jos teces mojim venama
+jos uvek te volim
+znaj, to nikad nisam prestala
+
+Kao nikotin
+tako ubijas me lagano
+jer usnama tvojim
+ja navucena sam odavno
+kao nikotin, kao nikotin
+
+Na svakih pet minuta
+nova ti cigareta zatreba
+dodji preko puta
+u mom je srcu jedna kutija
+
+Ref.`,
+
+},
+
+{
+	
+	songTitle:"Prava stvar",
+	songAuthor: "Zdravko Čolić",
+	songKey: "Dmol",
+	songColor: "#0000ff25",
+	songText:`Jedna za drugom
+takav zivot je moj
+nisam ljubio stvarno
+vazan bio je broj
+
+Jedna za drugom
+svakoj bio sam drag
+al' duboko u nama
+to ne ostavlja trag
+i ustvari srce spava
+sve do casa
+kad se javi prava
+
+Ref.
+S tobom je nesto drugo
+ti si za mene par
+s tobom to traje dugo
+ja sam probao sve
+ja sam prosao svud
+s tobom, s tobom
+je prava stvar
+
+Jedna za drugom
+vjecno s cvijeta na cvijet
+ti me vracas na zemlju
+ti mi prekidas let
+i ustvari srce spava
+sve do casa
+kad se javi prava
+
+Ref. 2x`,
+
+},
+
+{
+	
+	songTitle:"Negativ",
+	songAuthor: "Tijana Dapčević",
+	songKey: "Dmol",
+	songColor: "#0000ff25",
+	songText:`Svaki put kada ostanes sam
+budi siguran da tu sam ja
+u vazduhu, u stvarima
+u senkama koje donose dan
+
+Svaki put kada mislis na nju
+deo srca mog se slomi kao prut
+svaki uzdah tvoj boli kao da
+je noz u mojim grudima
+
+Ref. 2x
+Ja sam kao ti, ti si kao ja
+ma daj, priznaj mi to
+i dok budes ziv, moj si negativ
+moj bol osmeh je tvoj`,
+
+},
+
+{
+	
+	songTitle:"Moj je život Švicarska",
+	songAuthor: "Dino Merlin",
+	songKey: "Cmol",
+	songColor: "#0000ff25",
+	songText:`S vremena na vrijeme
+tvoje ime spomenem
+s vremena na vrijeme
+telefon okrenem
+988, niko ne zna ko sam
+
+Oprosti mi sto smetam
+znam da je kasno
+i da si zauzeta
+al' valjda ti je jasno
+
+
+Nocas sam u krizi
+k'o toranj u Pizi
+nocas budi dobra
+k'o sto nikad bila nisi, ti znas, da
+
+Ref.
+Moj je zivot Svicarska, skoro pa savrsen
+k'o blistavi brilijant vjestom rukom izbrusen
+imam sve sto pozelim, samo jedno ne
+da me neko bar na tren voli zbog mene
+
+S vremena na vrijeme, tvoje ime spomenem
+onako bez dileme tvoj broj okrenem
+nocas me je stalo, cujes li budalo
+dodji dok me nije srce izdalo
+
+Ref. `,
+
+},
+
+{
+	
+	songTitle:"Čuvaj moje srce",
+	songAuthor: "Aleksandra Radović",
+	songKey: "Amol iz F",
+	songColor: "#0000ff25",
+	songText:`Secam se, ti i ja
+sve smo mogli, sam Bog zna
+bosi pod zvezdama
+ukus meda na usnama
+
+Gde si sad, pitam se
+trazim izgubljeni raj
+do tvoga srca lakse
+bih peska stigla, znaj
+
+
+Secam se, ti i ja
+svaki dan k'o nova godina
+nocu bi plesali
+ljubili se na ulici
+
+K'o da smo na svetu sami
+i niko ne sluti na kraj
+do tvoga srca lakse
+bih peska stigla, znaj
+
+Ref.
+Kao luda, falis mi
+k'o pesak vreme mi curi
+po navici jos saljem ti
+brodove u oluji
+
+Samo da si nasmejan
+bas takvog te pamtim
+cuvaj moje srce jos
+kad sretnem te da ga vratis
+
+Ref.`,
+
+},
+
+{
+	
+	songTitle:"Piši propalo",
+	songAuthor: "Saša Kovačević",
+	songKey: "Cismol",
+	songColor: "#0000ff25",
+	songText:`Pomislio sam, bas nas je krenulo
+samo tebe sam u belom video
+sa ovog puta nikad ne bih skrenuo
+ali sve se to zbog tebe srusilo
+
+Ne zovi me, ne pisi mi
+za mene ne postojis ti
+
+
+Ref.
+Kada pomislis da cuvam te u grudima
+i da posle svega jos si jedina
+bolje da do deset izbrojis u sebi tad
+ti nisi vise nezamenljiva
+
+Kada pomislis da cuvam te u grudima
+i da je makar malo nade ostalo
+ja zaboraviti necu da si drugog ljubila
+zato, duso, pisi propalo
+
+Pratio sam te, a ti zalutala
+da li vrag je krio tvoje tragove
+toliko toga ti si mi precutala
+ali sve se sazna kasnije il' pre
+
+Ref.
+
+Zato, duso, pisi propalo`,
+
+},
+
+{
+	
+	songTitle:"Udala se moja crna draga",
+	songAuthor: "Željko Samardžić",
+	songKey: "Hmol",
+	songColor: "#0000ff25",
+	songText:`Udala se moja crna draga
+otisla mi kao mladost s praga
+daleko, u pravcu proleca
+
+Jutros mu je i sina dala
+imenom ga mojim nazvala
+a kaze da me se ne seca
+
+
+Ja sam bio poslednji
+sto ti je krisom u sobu svratio
+one noci kad sam te
+na -10 za Beograd pratio
+
+Ja sam bio poslednji
+kome si tada srusila muski san
+mogu valjda prvi bar
+da ti se javim i sina cestitam
+
+Da joj pisem nikad nije dala
+pokloni su ostali bez "hvala"
+da dodjem, nikad me nije pozvala
+
+Hvala Petra`,
+
+},
+
+{
+	
+	songTitle:"Ludi petak",
+	songAuthor: "Miligram",
+	songKey: "A",
+	songColor: "#0000ff25",
+	songText:`Cekam tebe, cekam noc
+a ni jedne na vidiku
+ostao sam sam
+onoj koja prva dodje
+dacu priliku
+da me voli takvog kakav sam
+
+
+U petak se noc uvija
+sama si trazila, sad sta cu ti ja
+
+Ref.
+Tako je dobro, tako je dobro
+tako je dobro, kad nisi tu
+pa ove noci bas mi je dobro
+nemoj da dodjes ni ujutru
+
+Poslacu ti
+mali deo atmosfere
+ni u cemu nemam mere
+a jos nije ni pocetak
+
+Jer u ponoc vile
+u crvenom izmile
+da poludis od te svile
+zovite me ludi petak
+
+Ovo je haos sa nama
+nije ovo odjedanput
+ostavljam ti sve
+ne treba mi cak ni kaput
+kljuc mi ne treba
+pricacemo neki drugi put
+
+Ref. 2x`,
+
+},
+
+
+
 /*
 {
 	
@@ -239,6 +532,7 @@ Ref.`,
 	songTitle:"",
 	songAuthor: "",
 	songKey: "",
+	songColor: "#0000ff25",
 	songText:``,
 
 },
@@ -254,6 +548,7 @@ Ref.`,
 	songTitle:"",
 	songAuthor: "",
 	songKey: "",
+	songColor: "#0000ff25",
 	songText:``,
 
 },

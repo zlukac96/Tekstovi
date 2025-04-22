@@ -1,5 +1,15 @@
 //window.addEventListener('load', function() {
 
+
+        /////    SLUZI DA NE BI MOGAO SLUCAJNO DA SE ZATVORI PROGRAM
+window.addEventListener('beforeunload', function (e) {
+    e.preventDefault();
+    e.returnValue = '';
+});
+
+
+
+
 	let closeButton = document.querySelector(".close-button");
 	let listContainer = document.querySelector(".list-container");
 	let textContainer = document.querySelector(".text-container");
@@ -11,6 +21,7 @@
 	
 	let oldHeaderText;
 	
+	const OpenedSongColor = "#00000044";
 	
 	let backButton = document.querySelector(".back-button");
 	let menuButton = document.querySelector(".menu-button");
@@ -24,7 +35,7 @@
 	listContainer.innerHTML = ``;
 	for(let i=0; i<listElements.length; i++){
 		listContainer.innerHTML += 
-		`<div style="background-color: ${listElements[i].songColor}" class="${listElements[i].songId} list-item">
+		`<div style="background-color: ${listElements[i].songColor}" class="song-Id-${i.toString()} list-item">
 			<h1>${listElements[i].songTitle}</h1>
 			<h3>${listElements[i].songAuthor}</h3>
 		</div>`;
@@ -32,7 +43,8 @@
 		//console.log("pozz")
 	}
 
-
+	let alreadyOpenedSongs = [];
+	let songListScrollSave = "empty";
 
 	let listItem = document.querySelectorAll(".list-item");
 
@@ -40,6 +52,14 @@
 
 	function loadSong(ev, indexInput="empty"){
 
+
+		if(indexInput === "empty"){
+			songListScrollSave = listContainer.scrollTop;
+			//console.log('ScrollTop:', songListScrollSave);   /////    SACUVAJ PODATKE
+			localStorage.setItem('songListScrollSaveStorage', songListScrollSave.toString());
+			//listContainer.scrollTop = 0;
+		}
+		
 		let targetSong = "empty";
 		let targetSongIndex = "empty";
 
@@ -66,19 +86,35 @@
 			listContainer.style.display = "none";
 			textContainer.style.display = "flex";
 			backButton.style.visibility= "visible";
-			targetSong.style.backgroundColor = "#ff000025"
-			targetSong.style.backgroundColor = "#00000044"
+			//targetSong.style.backgroundColor = "#ff000025"
+			targetSong.style.backgroundColor = OpenedSongColor;
 			textContainer.innerHTML = ``;
 			textContainer.innerHTML += `<h3>${listElements[targetSongIndex].songText}</h3>`;
-			headerText.innerText = targetSong.childNodes[1].innerText;
+			headerText.innerHTML = `${targetSong.childNodes[1].innerText} <span style="color:#1E90FF;">${listElements[targetSongIndex].songKey}</span>`;
 			textContainer.scroll(0, 0);
 			
 			state = "song";
-			/////            RESAVAJ SCROLL I OVERFLOW!!!!!!!!!!
+			/////            RESAVAJ SCROLL I OVERFLOW I INTONACIJE OBAVEZNO!!!!!!!!!!
 		}
+		
+		if (alreadyOpenedSongs.length === 0){
+			alreadyOpenedSongs.push(targetSongIndex);
+		}
+		else{
+			let isSame = false;
+			for(let i = 0; i < alreadyOpenedSongs.length; i++){
+				if(targetSongIndex === alreadyOpenedSongs[i]) {
+					isSame = true;
+					break;
+				}
+			}
+			if(isSame === false) alreadyOpenedSongs.push(targetSongIndex);
+		}
+		
+		localStorage.setItem('alreadyOpenedSongsStorage', JSON.stringify(alreadyOpenedSongs));
+		//console.log(alreadyOpenedSongs)
+		
 	}
-
-
 
 	for(let i=0; i<listItem.length; i++){
 		listItem[i].addEventListener("click", loadSong);
@@ -123,10 +159,14 @@
 	
 	function resetFunction(){
 		
+		alreadyOpenedSongs = [];
+		songListScrollSave = "empty";
+		localStorage.clear();
+
 		listContainer.innerHTML = ``;
 		for(let i=0; i<listElements.length; i++){
 			listContainer.innerHTML += 
-			`<div style="background-color: ${listElements[i].songColor}" class="${listElements[i].songId} list-item">
+			`<div style="background-color: ${listElements[i].songColor}" class="song-Id-${i.toString()} list-item">
 				<h1>${listElements[i].songTitle}</h1>
 				<h3>${listElements[i].songAuthor}</h3>
 			</div>`;
@@ -147,6 +187,8 @@
 		}
 		
 		*/
+		
+		
 		closeMenu();
 	}
 	
@@ -175,7 +217,7 @@
 		let elementId = ev.target.classList[0].split("-");
 		loadSong("input", parseInt(elementId[2]));
 		closeSearch();
-	}
+	}///   POPRAVI OVO OKO ID a, ideja je umesto toga koristiti kenerisan id od strane programa
 
 
 	function songSearch(){
@@ -185,7 +227,7 @@
 			
 			
 			if ( listContainer.childNodes[i].children[0].innerText.toLowerCase().includes(inputTextSearch.value.toLowerCase()) ) {
-			  console.log("String sadrži tekst!");
+			  //console.log("String sadrži tekst!");
 			  
 			//console.log(listContainer.childNodes[i].children[0].innerText);
 			let clone = listContainer.childNodes[i].cloneNode(true);
@@ -236,5 +278,35 @@
 
 	inputTextSearch.addEventListener("input", songSearch);
 
+
+	function loadFromStorage(){
+		
+		let alreadyOpenedSongsTemp = localStorage.getItem("alreadyOpenedSongsStorage");
+		
+		if(!(alreadyOpenedSongsTemp === null)){
+			alreadyOpenedSongs = JSON.parse(alreadyOpenedSongsTemp);
+			
+			for(let i = 0; i < alreadyOpenedSongs.length; i++){
+				if(!(listContainer.childNodes[alreadyOpenedSongs[i]] === undefined)){
+					listContainer.childNodes[alreadyOpenedSongs[i]].style.backgroundColor = OpenedSongColor;
+					//  NAPRAVI KONSTANTU ZA BOJE
+				}
+			}
+		}
+		
+		
+		let songListScrollSaveTemp = localStorage.getItem("songListScrollSaveStorage");
+		
+		if(!(songListScrollSaveTemp === null)){
+			songListScrollSave = parseInt(songListScrollSaveTemp);
+			listContainer.scrollTop = songListScrollSave;
+			//console.log(songListScrollSave);/////  ISPROVERAVAJ I UZDUZ I POPREKO i ugasi sve konzole
+		}		
+		
+		
+	}
+
+	loadFromStorage();
+	
 
 //});

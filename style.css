@@ -4,6 +4,13 @@
   --listItemShadow: 0px 0px 20px 1px rgba(0,0,0,0.12);
 }
 
+/*
+
+text-overflow: ellipsis;
+  overflow: hidden;
+
+*/
+
 p, h1, h2, h3, h4, h5, h6{
 	user-select: none;
 	pointer-events: none;
@@ -69,10 +76,17 @@ body{
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	height: var(--headerHeight);
+	min-height: var(--headerHeight);
 	background-color: white;
 	/*border-bottom: 2px solid black;*/
 	box-shadow: var(--listItemShadow);
+}
+
+.header h1{
+	text-overflow: ellipsis;
+	overflow: hidden;
+	text-align: center;
+	margin: 10px 0;
 }
 
 .list-container{
@@ -155,10 +169,12 @@ body{
 
 .menu-item:nth-child(2){
 	border-top: 5px solid black;
+	border-bottom: 1px solid black; /* mozda privremeno */
 }
 
 .menu-item:last-child{
 	border-bottom: 1px solid black;
+	margin-top: auto;  /* Mozda privremeno */
 }
 
 
@@ -196,6 +212,7 @@ body{
 	font-size: 20px;
 	/*margin-right: 5px;*/
 	height: 40px;
+	min-width: 120px;
 }
 
 
@@ -203,6 +220,7 @@ body{
 	white-space: pre;
 	text-wrap: wrap;
 	text-align: center;
+	margin: 24px 12px;
 }
 
 /*
