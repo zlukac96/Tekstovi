@@ -474,8 +474,7 @@ da ti se javim i sina cestitam
 Da joj pisem nikad nije dala
 pokloni su ostali bez "hvala"
 da dodjem, nikad me nije pozvala
-
-Hvala Petra`,
+`,
 
 },
 
