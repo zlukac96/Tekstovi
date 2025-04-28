@@ -5,7 +5,7 @@ let listElements = [
 	songTitle:"U tebe sam zaljubljen",
 	songAuthor: "Rođa Raičević",
 	songKey: "E",
-	songColor: "#ff000025",
+	songColor: "#dadaff",
 	songText:`Reci cu ti, necu kriti
 u tebe sam zaljubljen
 cini mi se zivot ceo
@@ -35,7 +35,7 @@ bile ptice selice`,
 	songTitle:"Pile",
 	songAuthor: "Ceca",
 	songKey: "Gismol",
-	songColor: "#ff000025",
+	songColor: "#dadaff",
 	songText:`Ovo je svet za pametnije
 ovo je put za neke hrabrije
 
@@ -65,7 +65,7 @@ ovo je put za neke snaznije`,
 	songTitle:"Libero",
 	songAuthor: "Željko Joksimović",
 	songKey: "Cmol",
-	songColor: "#00ff0025",
+	songColor: "#dadaff",
 	songText:`Priznacu ti sve i za sta nisam kriv
 umesto mene nek drugi se bore
 moje telo predalo se
@@ -110,7 +110,7 @@ Ref.`,
 	songTitle:"Uđi slobodno",
 	songAuthor: "Lepa Brena",
 	songKey: "Amol",
-	songColor: "#00ff0025",
+	songColor: "#dadaff",
 	songText:`O, kako uzimas mi dah
 kad korake ti cujem
 i k'o da nije noc, san me ne hvata
@@ -158,7 +158,7 @@ Ref.`,
 	songTitle:"Grlica",
 	songAuthor: "Željko Samardžić",
 	songKey: "Amol",
-	songColor: "#0000ff25",
+	songColor: "#dadaff",
 	songText:`Sto si to u meni nasla
 moja tuzna grlice
 sto su drumovi za mene
@@ -193,7 +193,7 @@ tvojih dvadeset i pet`,
 	songTitle:"Pokora",
 	songAuthor: "Boris Režak",
 	songKey: "D",
-	songColor: "#0000ff25",
+	songColor: "#dadaff",
 	songText:`Kad bi mi dala ti
 u srce da udjem ti
 i da pustim korjenje
@@ -232,7 +232,7 @@ Ref.`,
 	songTitle:"Nikotin",
 	songAuthor: "Nataša Bekvalac",
 	songKey: "Dmol",
-	songColor: "#0000ff25",
+	songColor: "#dadaff",
 	songText:`Sa devojkom si bio
 juce sam videla te slucajno
 isti k'o i uvek
@@ -270,7 +270,7 @@ Ref.`,
 	songTitle:"Prava stvar",
 	songAuthor: "Zdravko Čolić",
 	songKey: "Dmol",
-	songColor: "#0000ff25",
+	songColor: "#dadaff",
 	songText:`Jedna za drugom
 takav zivot je moj
 nisam ljubio stvarno
@@ -310,7 +310,7 @@ Ref. 2x`,
 	songTitle:"Negativ",
 	songAuthor: "Tijana Dapčević",
 	songKey: "Dmol",
-	songColor: "#0000ff25",
+	songColor: "#daffda",
 	songText:`Svaki put kada ostanes sam
 budi siguran da tu sam ja
 u vazduhu, u stvarima
@@ -334,7 +334,7 @@ moj bol osmeh je tvoj`,
 	songTitle:"Moj je život Švicarska",
 	songAuthor: "Dino Merlin",
 	songKey: "Cmol",
-	songColor: "#0000ff25",
+	songColor: "#daffda",
 	songText:`S vremena na vrijeme
 tvoje ime spomenem
 s vremena na vrijeme
@@ -372,7 +372,7 @@ Ref. `,
 	songTitle:"Čuvaj moje srce",
 	songAuthor: "Aleksandra Radović",
 	songKey: "Amol iz F",
-	songColor: "#0000ff25",
+	songColor: "#daffda",
 	songText:`Secam se, ti i ja
 sve smo mogli, sam Bog zna
 bosi pod zvezdama
@@ -414,7 +414,7 @@ Ref.`,
 	songTitle:"Piši propalo",
 	songAuthor: "Saša Kovačević",
 	songKey: "Cismol",
-	songColor: "#0000ff25",
+	songColor: "#ffdada",
 	songText:`Pomislio sam, bas nas je krenulo
 samo tebe sam u belom video
 sa ovog puta nikad ne bih skrenuo
@@ -451,7 +451,7 @@ Zato, duso, pisi propalo`,
 	songTitle:"Udala se moja crna draga",
 	songAuthor: "Željko Samardžić",
 	songKey: "Hmol",
-	songColor: "#0000ff25",
+	songColor: "#ffdada",
 	songText:`Udala se moja crna draga
 otisla mi kao mladost s praga
 daleko, u pravcu proleca
@@ -483,7 +483,7 @@ da dodjem, nikad me nije pozvala
 	songTitle:"Ludi petak",
 	songAuthor: "Miligram",
 	songKey: "A",
-	songColor: "#0000ff25",
+	songColor: "#ffdada",
 	songText:`Cekam tebe, cekam noc
 a ni jedne na vidiku
 ostao sam sam

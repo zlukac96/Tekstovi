@@ -21,7 +21,7 @@ window.addEventListener('beforeunload', function (e) {
 	
 	let oldHeaderText;
 	
-	const OpenedSongColor = "#00000044";
+	const OpenedSongColor = "#bbbbbb";
 	
 	let backButton = document.querySelector(".back-button");
 	let menuButton = document.querySelector(".menu-button");
@@ -192,7 +192,7 @@ window.addEventListener('beforeunload', function (e) {
 		closeMenu();
 	}
 	
-	resetButton.addEventListener("click", resetFunction);
+	resetButton.addEventListener("dblclick", resetFunction);
 		
 	function openSearch(){
 		closeMenu();
